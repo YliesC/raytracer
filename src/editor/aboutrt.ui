@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>aboutrt</class>
+ <widget class="QDialog" name="aboutrt">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>550</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>550</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>About Raytracer</string>
+  </property>
+  <widget class="QLabel" name="aboutIcon">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>50</y>
+     <width>71</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="ressource.qrc">:/images/images/about.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>20</y>
+     <width>371</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Raytracer V.2.6
+
+This is a end of year project bring to you by youngs developers from Epitech Toulouse.
+
+Zadkiel Aslafy-Aharonian (aslafy_z)
+Ylies Chahi (chahi_y)
+Joan Brugaya (brugay_j)
+Gaëtan Boyals (boyals_g)
+Jean-Christian Mbappe (mbappe_a)
+Loïck Rivemal (rivema_l)
+
+The program code of this project is subject to the Creative Commons Licence version 3.0 (CC-BY-NC-SA 3.0 FR).</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>150</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="ressource.qrc">:/images/images/epitech.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="closeAbout">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>260</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="ressource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

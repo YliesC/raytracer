@@ -1,0 +1,136 @@
+{
+    "config": {
+        "antialiasing": 16,
+        "cams": [
+            {
+                "name": "my_eye",
+                "position": [
+                    0,
+                    0,
+                    0
+                ],
+                "rotation": [
+                    0,
+                    0,
+                    0
+                ]
+            }
+        ],
+        "mods": [
+            {
+                "enabled": false,
+                "name": "refraction"
+            },
+            {
+                "enabled": false,
+                "name": "cell_shading"
+            },
+            {
+                "enabled": false,
+                "name": "reflexion"
+            },
+            {
+                "enabled": true,
+                "name": "shadow",
+                "ratio": 0
+            },
+            {
+                "enabled": false,
+                "name": "filter_negative"
+            },
+            {
+                "enabled": false,
+                "name": "filter_greyscale"
+            },
+            {
+                "enabled": true,
+                "name": "light"
+            }
+        ],
+        "screen": {
+            "name": "ex4",
+            "size": [
+                1920,
+                1080
+            ]
+        }
+    },
+    "lights": [
+        {
+            "color": "#FFFFFF",
+            "position": [
+                0,
+                20,
+                100
+            ],
+            "ratio": 0,
+            "type": 0
+        },
+        {
+            "color": "#FFFFFF",
+            "position": [
+                400,
+                -300,
+                100
+            ],
+            "ratio": 0,
+            "type": 0
+        }
+    ],
+    "objects": [
+        {
+            "color": "#FFCD02",
+            "mods": [
+                {
+                    "enabled": false,
+                    "name": "chess"
+                },
+                {
+                    "enabled": false,
+                    "name": "perlin"
+                }
+            ],
+            "position": [
+                0,
+                0,
+                -50
+            ],
+            "radius1": 0,
+            "radius2": 0,
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "shine": 0,
+            "type": "plane"
+        },
+        {
+            "color": "#724FFF",
+            "mods": [
+                {
+                    "enabled": false,
+                    "name": "chess"
+                },
+                {
+                    "enabled": false,
+                    "name": "perlin"
+                }
+            ],
+            "position": [
+                400,
+                0,
+                -20
+            ],
+            "radius1": 25,
+            "radius2": 0,
+            "rotation": [
+                -20,
+                0,
+                0
+            ],
+            "shine": 0,
+            "type": "cone"
+        }
+    ]
+}

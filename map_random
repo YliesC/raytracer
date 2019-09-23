@@ -1,0 +1,100 @@
+#!/bin/bash
+i=0
+
+if [[ $# > 0 ]]; then
+    gen=$1
+else
+    gen=1000
+fi
+
+file=$(date | sed -e "s/[ |:]/_/g")
+file="scene_$file"
+
+text="{\"config\": {\"antialiasing\": 8,
+        \"cams\": [
+            {
+                \"name\": \"\",
+                \"position\": [
+                    -3000,
+                    0,
+                    100
+                ],
+                \"rotation\": [
+                    0,
+                    0,
+                    0
+                ]
+            }
+        ],
+        \"mods\": [
+            {
+                \"enabled\": false,
+                \"name\": \"cell_shading\"
+            },
+            {
+                \"enabled\": true,
+                \"name\": \"reflexion\",
+		\"ratio\": 0.5
+
+            },
+            {
+                \"enabled\": true,
+                \"name\": \"shadow\"
+            },
+            {
+                \"enabled\": true,
+                \"name\": \"light\"
+            }
+        ],
+        \"screen\": {
+            \"name\": \"my_scene\",
+            \"size\": [
+                1920,
+                1080
+            ]
+        }
+    },
+    \"lights\": [
+        {
+            \"color\": \"#FF0000\",
+            \"position\": [
+                    -1000,
+                0,
+                0
+            ],
+            \"ratio\": 0,
+            \"type\": 0
+        }
+    ],
+\"objects\":["
+
+echo "$file.json"
+(( gen_minus = $gen - 1 ))
+while [[  $i != $gen ]]
+do
+  col="#$(cat /dev/urandom | tr -cd 'a-f0-9' | head -c 6)"
+  (( px = $RANDOM % 100 ))
+  (( py = $RANDOM % 2000 - 1000 ))
+  (( pz = $RANDOM % 2000 ))
+  (( rx = $RANDOM % 360 ))
+  (( ry = $RANDOM % 360 ))
+  (( rz = $RANDOM % 360 ))
+  (( obj = $RANDOM % 8 ))
+  case $obj in
+    0) obj="sphere" sz=15;;
+    1) obj="sphere" sz=30;;
+    2) obj="sphere" sz=45;;
+    3) obj="sphere" sz=30;;
+    4) obj="sphere" sz=10;;
+    5) obj="sphere" sz=30;;
+    6) obj="sphere" sz=20;;
+  esac
+  obj="{\"position\":[$px,$py,$pz],\"rotation\":[0,0,0],\"color\":\"$col\",\"radius1\":$sz,\"type\":\"$obj\"}"
+  [ $i != $gen_minus ] && obj="$obj,"
+  echo -ne "$i\r" >&2
+  text="$text$obj"
+  ((i += 1))
+done
+text="$text]}"
+
+echo "$text" > "$file.json"

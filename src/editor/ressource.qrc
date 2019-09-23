@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/checkbox.png</file>
+        <file>images/ok.png</file>
+        <file>images/cross.png</file>
+        <file>images/add.png</file>
+        <file>images/remove.png</file>
+        <file>images/preview.png</file>
+        <file>images/mainicon.png</file>
+        <file>images/genicon.png</file>
+        <file>images/about.png</file>
+        <file>images/epitech.png</file>
+    </qresource>
+</RCC>

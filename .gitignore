@@ -1,0 +1,16 @@
+/rt
+/editor
+*.o
+*.a
+*~
+.\#*
+\#*
+*.bmp
+lib/*.h
+src/editor/Makefile
+qrc_*.cpp
+moc_*.cpp
+ui_*.h
+core
+*.core
+*.pro.user

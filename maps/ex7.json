@@ -1,0 +1,325 @@
+{
+    "config": {
+        "antialiasing": 16,
+        "cams": [
+            {
+                "name": "",
+                "position": [
+                    -100,
+                    0,
+                    0
+                ],
+                "rotation": [
+                    0,
+                    0,
+                    0
+                ]
+            }
+        ],
+        "mods": [
+            {
+                "enabled": false,
+                "name": "refraction"
+            },
+            {
+                "enabled": false,
+                "name": "cell_shading"
+            },
+            {
+                "enabled": false,
+                "name": "reflexion"
+            },
+            {
+                "enabled": true,
+                "name": "shadow",
+                "ratio": 0
+            },
+            {
+                "enabled": false,
+                "name": "filter_negative"
+            },
+            {
+                "enabled": false,
+                "name": "filter_greyscale"
+            },
+            {
+                "enabled": true,
+                "name": "light"
+            }
+        ],
+        "screen": {
+            "name": "ex7",
+            "size": [
+                1920,
+                1080
+            ]
+        }
+    },
+    "lights": [
+        {
+            "color": "#FFFFFF",
+            "position": [
+                0,
+                4,
+                5
+            ],
+            "ratio": 0,
+            "type": 0
+        },
+        {
+            "color": "#FFFFFF",
+            "position": [
+                0,
+                -4,
+                5
+            ],
+            "ratio": 0,
+            "type": 0
+        }
+    ],
+    "objects": [
+        {
+            "color": "#878787",
+            "mods": [
+                {
+                    "enabled": false,
+                    "name": "chess"
+                },
+                {
+                    "enabled": false,
+                    "name": "perlin"
+                }
+            ],
+            "position": [
+                0,
+                0,
+                -14
+            ],
+            "radius1": 0,
+            "radius2": 0,
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "shine": 0,
+            "type": "plane"
+        },
+        {
+            "color": "#888888",
+            "mods": [
+                {
+                    "enabled": false,
+                    "name": "chess"
+                },
+                {
+                    "enabled": false,
+                    "name": "perlin"
+                }
+            ],
+            "position": [
+                -300,
+                0,
+                50
+            ],
+            "radius1": 0,
+            "radius2": 0,
+            "rotation": [
+                0,
+                10,
+                0
+            ],
+            "shine": 0,
+            "type": "plane"
+        },
+        {
+            "color": "#FF00FF",
+            "mods": [
+                {
+                    "enabled": false,
+                    "name": "chess"
+                },
+                {
+                    "enabled": false,
+                    "name": "perlin"
+                }
+            ],
+            "position": [
+                -50,
+                0,
+                -5
+            ],
+            "radius1": 1,
+            "radius2": 0,
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "shine": 0,
+            "type": "sphere"
+        },
+        {
+            "color": "#3D50FF",
+            "mods": [
+                {
+                    "enabled": false,
+                    "name": "chess"
+                },
+                {
+                    "enabled": false,
+                    "name": "perlin"
+                }
+            ],
+            "position": [
+                -45,
+                10,
+                0
+            ],
+            "radius1": 2,
+            "radius2": 0,
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "shine": 0,
+            "type": "cylinder"
+        },
+        {
+            "color": "#0000FF",
+            "mods": [
+                {
+                    "enabled": false,
+                    "name": "chess"
+                },
+                {
+                    "enabled": false,
+                    "name": "perlin"
+                }
+            ],
+            "position": [
+                -45,
+                -10,
+                0
+            ],
+            "radius1": 2,
+            "radius2": 0,
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "shine": 0,
+            "type": "cylinder"
+        },
+        {
+            "color": "#0000FF",
+            "mods": [
+                {
+                    "enabled": false,
+                    "name": "chess"
+                },
+                {
+                    "enabled": false,
+                    "name": "perlin"
+                }
+            ],
+            "position": [
+                10,
+                10,
+                0
+            ],
+            "radius1": 2,
+            "radius2": 0,
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "shine": 0,
+            "type": "cylinder"
+        },
+        {
+            "color": "#0000FF",
+            "mods": [
+                {
+                    "enabled": false,
+                    "name": "chess"
+                },
+                {
+                    "enabled": false,
+                    "name": "perlin"
+                }
+            ],
+            "position": [
+                10,
+                -10,
+                0
+            ],
+            "radius1": 2,
+            "radius2": 0,
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "shine": 0,
+            "type": "cylinder"
+        },
+        {
+            "color": "#FF0004",
+            "mods": [
+                {
+                    "enabled": false,
+                    "name": "chess"
+                },
+                {
+                    "enabled": false,
+                    "name": "perlin"
+                }
+            ],
+            "position": [
+                10,
+                15,
+                0
+            ],
+            "radius1": 3,
+            "radius2": 0,
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "shine": 0,
+            "type": "sphere"
+        },
+        {
+            "color": "#FF0004",
+            "mods": [
+                {
+                    "enabled": false,
+                    "name": "chess"
+                },
+                {
+                    "enabled": false,
+                    "name": "perlin"
+                }
+            ],
+            "position": [
+                10,
+                10,
+                5
+            ],
+            "radius1": 0,
+            "radius2": 0,
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "shine": 0,
+            "type": "sphere"
+        }
+    ]
+}

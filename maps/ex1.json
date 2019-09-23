@@ -1,0 +1,108 @@
+{
+    "config": {
+        "antialiasing": 32,
+        "cams": [
+            {
+                "name": "my_eye",
+                "position": [
+                    0,
+                    0,
+                    0
+                ],
+                "rotation": [
+                    0,
+                    0,
+                    0
+                ]
+            }
+        ],
+        "mods": [
+            {
+                "enabled": false,
+                "name": "refraction"
+            },
+            {
+                "enabled": false,
+                "name": "cell_shading"
+            },
+            {
+                "enabled": false,
+                "name": "reflexion"
+            },
+            {
+                "enabled": false,
+                "name": "shadow"
+            },
+            {
+                "enabled": false,
+                "name": "filter_negative"
+            },
+            {
+                "enabled": false,
+                "name": "filter_greyscale"
+            },
+            {
+                "enabled": true,
+                "name": "light"
+            }
+        ],
+        "screen": {
+            "name": "ex1",
+            "size": [
+                1920,
+                1080
+            ]
+        }
+    },
+    "lights": [
+        {
+            "color": "#FFFFFF",
+            "position": [
+                -10,
+                0,
+                100
+            ],
+            "ratio": 0,
+            "type": 0
+        },
+        {
+            "color": "#FFFFFF",
+            "position": [
+                -10,
+                -100,
+                0
+            ],
+            "ratio": 0,
+            "type": 0
+        }
+    ],
+    "objects": [
+        {
+            "color": "#FF0101",
+            "mods": [
+                {
+                    "enabled": false,
+                    "name": "chess"
+                },
+                {
+                    "enabled": false,
+                    "name": "perlin"
+                }
+            ],
+            "position": [
+                100,
+                0,
+                0
+            ],
+            "radius1": 7,
+            "radius2": 0,
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "shine": 0,
+            "type": "sphere"
+        }
+    ]
+}
